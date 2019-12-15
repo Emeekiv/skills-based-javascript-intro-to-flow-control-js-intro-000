@@ -32,15 +32,11 @@ return age >= 13 && age <= 19 ?
 }
 
 function switchAge(age) {
-if (age >= 13 && age <= 19){
-  var stage = true
-}
-else {stage = false}
   switch (age){
-    case (stage === true):
+    case (age >= 13 && age <= 19):
       return 'You are a teenager'
       break;
-    case (stage === false):
+    default :
       return 'You have an age'
       break;
     }
