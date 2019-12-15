@@ -37,10 +37,10 @@ if (age >= 13 && age <= 19){
 }
 else {stage = false}
   switch (age){
-    case (stage = true):
+    case (stage === true):
       return 'You are a teenager'
       break;
-    case (stage = false):
+    case (stage === false):
       return 'You have an age'
       break;
     }
